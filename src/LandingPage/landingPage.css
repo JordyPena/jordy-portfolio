@@ -1,0 +1,11 @@
+.header-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 300px;
+}
+
+h1 {
+  color: #39FF14;
+  font-size: 50px;
+}
