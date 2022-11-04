@@ -6,6 +6,10 @@
 }
 
 h1 {
-  color: #39FF14;
   font-size: 50px;
+  -webkit-text-stroke: 3px #39FF14;
+}
+
+.highlightTxt-active {
+  color: #39FF14;;
 }
