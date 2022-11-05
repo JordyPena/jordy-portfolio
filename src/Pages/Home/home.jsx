@@ -1,5 +1,6 @@
 import './home.css';
 import Navigation from '../../Components/Navigation/navigation';
+import Footer from '../../Components/Footer/footer';
 import { RiReactjsLine, RiAngularjsFill } from 'react-icons/ri';
 import { DiJavascript1 } from 'react-icons/di';
 import { FaNodeJs, FaFigma, FaBootstrap } from 'react-icons/fa'
@@ -137,6 +138,7 @@ const Home = () => {
             </div>
           </div>
         </section>
+        <Footer />
       </div>
     </>
   )

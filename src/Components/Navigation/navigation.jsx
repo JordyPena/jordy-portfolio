@@ -1,6 +1,6 @@
 import { CgMenuRightAlt } from 'react-icons/cg'
 import { SiReact } from 'react-icons/si';
-import './navigation.css';;
+import '../Navigation/navigation.css';
 const Navigation = () => {
   return (
     <nav>
