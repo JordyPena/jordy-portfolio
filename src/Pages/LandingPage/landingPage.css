@@ -5,11 +5,11 @@
   top: 300px;
 }
 
-h1 {
+.highlightTxt {
   font-size: 50px;
   -webkit-text-stroke: 3px #39FF14;
 }
 
 .highlightTxt-active {
-  color: #39FF14;;
+  color: #39FF14;
 }
