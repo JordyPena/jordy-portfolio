@@ -53,7 +53,7 @@ const Home = () => {
                 <RiReactjsLine/>
               </div>
               <div className='stack-txt'>
-                <p>React</p>
+                <p className='stack-p-styles'>React</p>
               </div>
             </div>
             <div className='stack-content'>
@@ -61,7 +61,7 @@ const Home = () => {
                 <RiAngularjsFill/>
               </div>
               <div className='stack-txt'>
-                <p>Angular</p>
+                <p className='stack-p-styles'>Angular</p>
               </div>
             </div>
             <div className='stack-content'>
@@ -69,7 +69,7 @@ const Home = () => {
                 <FaNodeJs/>
               </div>
               <div className='stack-txt'>
-                <p>Node</p>
+                <p className='stack-p-styles'>Node</p>
               </div>
             </div>
             <div className='stack-content'>
@@ -77,7 +77,7 @@ const Home = () => {
                 <DiJavascript1/>
               </div>
               <div className='stack-txt'>
-                <p>Javascript</p>
+                <p className='stack-p-styles'>Javascript</p>
               </div>
             </div>
             <div className='stack-content'>
@@ -85,7 +85,7 @@ const Home = () => {
                 <FaFigma/>
               </div>
               <div className='stack-txt'>
-                <p>Figma</p>
+                <p className='stack-p-styles'>Figma</p>
               </div>
             </div>
             <div className='stack-content'>
@@ -93,7 +93,7 @@ const Home = () => {
                 <FaBootstrap/>
               </div>
               <div className='stack-txt'>
-                <p>Bootstrap</p>
+                <p className='stack-p-styles'>Bootstrap</p>
               </div>
             </div>
             <div className='stack-content'>
@@ -101,7 +101,7 @@ const Home = () => {
                 <SiTypescript/>
               </div>
               <div className='stack-txt'>
-                <p>Typescript</p>
+                <p className='stack-p-styles'>Typescript</p>
               </div>
             </div>
           </div>
