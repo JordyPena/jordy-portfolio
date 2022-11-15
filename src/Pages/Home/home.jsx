@@ -6,7 +6,77 @@ import { DiJavascript1 } from 'react-icons/di';
 import { FaNodeJs, FaFigma, FaBootstrap } from 'react-icons/fa'
 import { SiTypescript } from 'react-icons/si';
 import { MdOutlineSubdirectoryArrowLeft } from 'react-icons/md';
+import { useEffect } from 'react';
 const Home = () => {
+  useEffect(() => {
+    const homeElement = document.querySelector('.home-container')
+    homeElement.style.opacity = '0';
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        const square = entry.target.querySelector('.alien-img');
+    
+        if (entry.isIntersecting) {
+          square.classList.add('alien-animation');
+        return; // if we added the class, exit the function
+        }
+    
+        // We're not intersecting, so remove the class!
+        square.classList.remove('alien-animation');
+      });
+    });
+
+    const homeContentObserver = new IntersectionObserver(entries => {
+      homeElement.style.opacity = '1';
+      entries.forEach(entry => {
+        const square = entry.target.querySelector('.home-header-styles');
+
+        if (entry.isIntersecting) {
+          square.classList.add('header-animation');
+        return; // if we added the class, exit the function
+        }
+    
+        // We're not intersecting, so remove the class!
+        square.classList.remove('header-animation');
+      });
+    });
+
+    const txtObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        const txt = entry.target.querySelector('.txt-container')
+        const txt2 = entry.target.querySelector('.second-txt')
+        if (entry.isIntersecting) {
+          txt.classList.add('header-animation');
+          txt2.classList.add('header-animation');
+        return; // if we added the class, exit the function
+        }
+    
+        // We're not intersecting, so remove the class!
+        txt.classList.remove('header-animation');
+        txt2.classList.remove('header-animation');
+      });
+    });
+
+    const featuredObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        const txt = entry.target.querySelector('.featured-h-styles')
+        const stack = entry.target.querySelector('.featured-container')
+        if (entry.isIntersecting) {
+          txt.classList.add('featured-h-animation');
+          stack.classList.add('featured-animation');
+        return; // if we added the class, exit the function
+        }
+    
+        // We're not intersecting, so remove the class!
+        txt.classList.remove('featured-h-animation');
+        stack.classList.remove('featured-animation');
+      });
+    });
+
+    observer.observe(document.querySelector('.alien-img-container'));
+    homeContentObserver.observe(document.querySelector('.home-header-container'));
+    txtObserver.observe(document.querySelector('.home-content-container'));
+    featuredObserver.observe(document.querySelector('.featured-section-container'));
+  }, [])
   return (
     <>
       <Navigation />
@@ -107,7 +177,7 @@ const Home = () => {
           </div>
         </section>
         <section className='featured-section-container'>
-          <h2 className='home-h-styles'>
+          <h2 className='featured-h-styles'>
             Featured
           </h2>
           <div className='featured-container'>
@@ -115,7 +185,7 @@ const Home = () => {
               <span className='prj-img'>
               </span>
               <div>
-                <h3 className='featured-h-styles'>
+                <h3 className='featured-content-h-styles'>
                   Pokemon TCG Guru
                 </h3>
                 <p className='featured-p-styles'>
