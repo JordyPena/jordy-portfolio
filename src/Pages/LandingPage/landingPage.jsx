@@ -19,7 +19,7 @@ const LandingPage = () => {
       setHighlight(true);
       setTimeout(() => {
         navigate('/home')
-      }, 1000)
+      }, 500)
     }
   }, [index, fullText, text, navigate, highlight])
 

@@ -77,6 +77,11 @@ const Home = () => {
     txtObserver.observe(document.querySelector('.home-content-container'));
     featuredObserver.observe(document.querySelector('.featured-section-container'));
   }, [])
+
+  const goToLiveApp = () => {
+    window.open('https://tcg.vercel.app/', '_blank');
+  }
+
   return (
     <>
       <Navigation />
@@ -199,7 +204,7 @@ const Home = () => {
                   </div>
                 </div>
                 <div>
-                  <button className='featured-btn'>
+                  <button className='featured-btn' onClick={() => goToLiveApp()}>
                     Visit
                     <MdOutlineSubdirectoryArrowLeft />
                   </button>
