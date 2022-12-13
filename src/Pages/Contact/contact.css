@@ -1,0 +1,62 @@
+.contact-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 5px;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.top-item, h1 {
+  color: white;
+}
+
+.top-item {
+  display: flex;
+  justify-content: center;
+}
+
+.bottom-item {
+  width: 100%;
+  font-weight: bolder;
+  color: white;
+}
+
+.contact-button {
+  color: black;
+  border-radius: 5px;
+  background-color: white;
+  margin-top: 20px;
+  border: 0;
+  padding: 15px;
+  font-size: 18px;
+  width: 100%;
+  max-width: 200px;
+  align-self: center;
+}
+
+.contact-button:hover {
+  opacity: 0.5;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-form, label {
+  width: 100%;
+  margin: 10px 0 5px 0;
+}
+
+.contact-form input, .contact-form textarea {
+  padding: 10px;
+}
+
+.github, .email, .linkedin {
+  color: white;
+}
