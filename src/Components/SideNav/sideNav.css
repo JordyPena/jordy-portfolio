@@ -8,6 +8,7 @@
 
 .ul-styles li {
   padding-bottom: 5px;
+  text-align: center;
 }
 
 .nav-icons {
@@ -41,4 +42,12 @@ a:link {
 
 a:active {
   color: black;
+}
+
+.active {
+  color: white;
+}
+
+.not-active {
+  text-decoration: none;
 }
