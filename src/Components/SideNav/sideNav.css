@@ -1,7 +1,44 @@
 .ul-styles {
+  display: flex;
+  justify-content: space-evenly;
   list-style-type: none;
+  padding: unset;
+  margin: unset;
+}
+
+.ul-styles li {
+  padding-bottom: 5px;
+}
+
+.nav-icons {
+  font-size: 30px;
+  padding: 0 5px;
 }
 
 .sidenav-wrapper {
   opacity: 1;
+}
+
+.nav-text {
+  margin: unset;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: black;
+}
+
+.ul-styles li:hover {
+  opacity: 0.5;
+}
+
+.ul-styles li:active {
+  opacity: 1;
+}
+
+a:active {
+  color: black;
 }
