@@ -1,4 +1,10 @@
-.featured-h-styles {
+.project-card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-card-h-styles {
   font-size: 30px;
   color: #7bff62;
   margin: 0;
@@ -6,13 +12,7 @@
   padding: 50px 0 10px 0;
 }
 
-.featured-section-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.featured-container {
+.project-container {
   margin: 20px 0;
   width: 80%;
   background-color: white;
@@ -20,7 +20,7 @@
   border-radius: 5px;
 }
 
-.featured-content {
+.project-content {
   display: flex;
   flex-direction: column;
   color: black;
@@ -28,25 +28,32 @@
   width: 100%;
 }
 
-.featured-content-h-styles {
+.project-img {
+  height: 200px;
+  width: 100%;
+  background-size: 312px;
+  background-repeat: no-repeat;
+}
+
+.project-card-content-h-styles {
   font-size: 15px;
   color: black;
   padding-left: 10px;
 }
 
-.featured-p-styles {
+.project-card-p-styles {
   font-size: 10px;
   margin: 0 10px 5px 10px;
 }
 
-.featured-btm-row {
+.project-card-btm-row {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
 }
 
-.featured-icon {
+.project-card-icon {
   background-color: black;
   color: white;
   border-radius: 20px;
@@ -60,7 +67,7 @@
   font-size: 10px;
 }
 
-.featured-btn {
+.project-card-visit-btn {
   background-color: white;
   border-radius: 10px;
   border: 2px solid black;
@@ -73,20 +80,3 @@
   font-size: 12px;
 }
 
-.prj-img {
-  background-image: url(../../../public/images/tcg.jpg);
-  height: 200px;
-  width: 100%;
-  background-size: 312px;
-  background-repeat: no-repeat;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .featured-h-animation {
-    animation: flipInY 2s ease forwards;
-  }
-
-  .featured-animation {
-    animation: fadeInLeft 2s ease forwards;
-  }
-}
