@@ -1,12 +1,10 @@
 import './home.css';
 import Navigation from '../../Components/Navigation/navigation';
 import Footer from '../../Components/Footer/footer';
-import { RiReactjsLine, RiAngularjsFill } from 'react-icons/ri';
-import { DiJavascript1 } from 'react-icons/di';
-import { FaNodeJs, FaFigma, FaBootstrap } from 'react-icons/fa'
-import { SiTypescript } from 'react-icons/si';
-import { MdOutlineSubdirectoryArrowLeft } from 'react-icons/md';
+import Featured from '../../Components/Featured/Featured';
+import Stack from '../../Components/Stack/Stack';
 import { useEffect } from 'react';
+
 const Home = () => {
   useEffect(() => {
     const homeElement = document.querySelector('.home-container')
@@ -78,10 +76,6 @@ const Home = () => {
     featuredObserver.observe(document.querySelector('.featured-section-container'));
   }, [])
 
-  const goToLiveApp = () => {
-    window.open('https://tcg.vercel.app/', '_blank');
-  }
-
   return (
     <>
       <Navigation />
@@ -118,101 +112,8 @@ const Home = () => {
         <section className='alien-img-container'>
           <span className='alien-img'></span>
         </section>
-        <section className='stack-section-container'>
-          <h2 className='home-h-styles'>
-            Stack
-          </h2>
-          <div className='stack-container'>
-            <div className='stack-content'>
-              <div className='stack-icon'>
-                <RiReactjsLine/>
-              </div>
-              <div className='stack-txt'>
-                <p className='stack-p-styles'>React</p>
-              </div>
-            </div>
-            <div className='stack-content'>
-              <div className='stack-icon'>
-                <RiAngularjsFill/>
-              </div>
-              <div className='stack-txt'>
-                <p className='stack-p-styles'>Angular</p>
-              </div>
-            </div>
-            <div className='stack-content'>
-              <div className='stack-icon'>
-                <FaNodeJs/>
-              </div>
-              <div className='stack-txt'>
-                <p className='stack-p-styles'>Node</p>
-              </div>
-            </div>
-            <div className='stack-content'>
-              <div className='stack-icon'>
-                <DiJavascript1/>
-              </div>
-              <div className='stack-txt'>
-                <p className='stack-p-styles'>Javascript</p>
-              </div>
-            </div>
-            <div className='stack-content'>
-              <div className='stack-icon'>
-                <FaFigma/>
-              </div>
-              <div className='stack-txt'>
-                <p className='stack-p-styles'>Figma</p>
-              </div>
-            </div>
-            <div className='stack-content'>
-              <div className='stack-icon'>
-                <FaBootstrap/>
-              </div>
-              <div className='stack-txt'>
-                <p className='stack-p-styles'>Bootstrap</p>
-              </div>
-            </div>
-            <div className='stack-content'>
-              <div className='stack-icon'>
-                <SiTypescript/>
-              </div>
-              <div className='stack-txt'>
-                <p className='stack-p-styles'>Typescript</p>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section className='featured-section-container'>
-          <h2 className='featured-h-styles'>
-            Featured
-          </h2>
-          <div className='featured-container'>
-            <div className='featured-content'>
-              <span className='prj-img'>
-              </span>
-              <div>
-                <h3 className='featured-content-h-styles'>
-                  Pokemon TCG Guru
-                </h3>
-                <p className='featured-p-styles'>
-                  A Platform That Helps You Discover The Value Of Your Pokemon Cards, And Find And Purchase New Cards With Updated Current And Previous Pricing.
-                </p>
-              </div>
-              <div className='featured-btm-row'>
-                <div>
-                  <div className='featured-icon'>
-                    <RiReactjsLine />React
-                  </div>
-                </div>
-                <div>
-                  <button className='featured-btn' onClick={() => goToLiveApp()}>
-                    Visit
-                    <MdOutlineSubdirectoryArrowLeft />
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <Stack />
+        <Featured />
         <Footer />
       </div>
     </>
