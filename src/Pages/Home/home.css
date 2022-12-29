@@ -69,14 +69,6 @@
   animation: flipInY 2s ease forwards;
 }
 
-.prj-img {
-  background-image: url(../../../public/images/tcg.jpg);
-  height: 200px;
-  width: 100%;
-  background-size: 312px;
-  background-repeat: no-repeat;
-}
-
 @keyframes floating {
   0% { transform: translate(0,  0px); }
   50%  { transform: translate(0, 15px); }
