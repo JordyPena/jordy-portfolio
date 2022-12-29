@@ -82,7 +82,7 @@ const Contact = () => {
             action="https://formspree.io/mgenndrq"
             method="POST"
           >
-            <label for="user-name">Name</label>
+            <label htmlFor="user-name">Name</label>
             <input
               placeholder={currentOption.name}
               className="user-name"
@@ -90,7 +90,7 @@ const Contact = () => {
               name="name"
               required
             />
-            <label for="email-input">Email</label>
+            <label htmlFor="email-input">Email</label>
             <input
               placeholder={currentOption.email}
               className="email-input"
@@ -98,7 +98,7 @@ const Contact = () => {
               name="email"
               required
             />
-            <label for="subject">Subject</label>
+            <label htmlFor="subject">Subject</label>
             <input
               placeholder={currentOption.subject}
               className="subject"
@@ -106,7 +106,7 @@ const Contact = () => {
               name="email"
               required
             />
-            <label for="message">Message</label>
+            <label htmlFor="message">Message</label>
             <textarea
               placeholder={currentOption.message}
               className="message"
