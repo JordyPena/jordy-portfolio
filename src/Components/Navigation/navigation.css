@@ -15,3 +15,19 @@ nav {
   padding: 0;
   margin: 0;
 }
+
+.egg-active {
+  animation: shake 1.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+.easter-egg-container {
+  display: flex;
+}
+
+.easter-egg-text {
+  font-size: 15px;
+  padding-left: 5px
+}
