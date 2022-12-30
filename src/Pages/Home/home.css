@@ -1,7 +1,7 @@
 .home-container {
   background-image:  linear-gradient(to right bottom,rgba(5,8,16,.6),rgba(5,8,16,.6)),url('../../../public/images/space.jpg');
   background-repeat: no-repeat;
-  background-size: 100vh;
+  background-size: 100%;
   width: 100%;
 }
 
@@ -86,5 +86,24 @@
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
     margin-top: 5px;
+  }
+}
+
+/* Large Monitors */
+@media only screen and (min-width: 1920px) and (max-width: 10000px) {
+  .home-header-styles {
+    font-size: 25px;
+  }
+
+  .home-content-container {
+    font-size: 35px;
+  }
+
+  .second-txt {
+    font-size: 20px;
+  }
+
+  .home-h-styles {
+    font-size: 35px;
   }
 }

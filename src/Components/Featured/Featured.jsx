@@ -1,5 +1,5 @@
 import "../Featured/Featured.css";
-import Data from '../../Data/Data';
+import Data from "../../Data/Data";
 import { MdOutlineSubdirectoryArrowLeft } from "react-icons/md";
 import { RiReactjsLine } from "react-icons/ri";
 const Featured = () => {
@@ -12,7 +12,10 @@ const Featured = () => {
       <h2 className="featured-h-styles">Featured</h2>
       <div className="featured-container">
         <div className="featured-content">
-          <span className="prj-img" style={{ backgroundImage: `url(${Data[0].img})`}}></span>
+          <span
+            className="prj-img"
+            style={{ backgroundImage: `url(${Data[0].img})` }}
+          ></span>
           <div>
             <h3 className="featured-content-h-styles">Pokemon TCG Guru</h3>
             <p className="featured-p-styles">
