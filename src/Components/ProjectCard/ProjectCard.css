@@ -18,6 +18,13 @@
   background-color: white;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   border-radius: 5px;
+  vertical-align: middle;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+
+.project-container:hover {
+  transform: scale(1.1);
 }
 
 .project-content {
@@ -31,8 +38,7 @@
 .project-img {
   height: 200px;
   width: 100%;
-  background-size: 312px;
-  background-repeat: no-repeat;
+  background-repeat: round;
 }
 
 .project-card-content-h-styles {
@@ -80,3 +86,44 @@
   font-size: 12px;
 }
 
+.project-card-visit-btn:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Tablet */
+@media only screen and (min-width: 600px) and (max-width: 1000px) {
+  .project-container {
+    width: 50%;
+  }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1000px) and (max-width: 1920px) {
+  .project-container {
+    width: 40%;
+  }
+
+  .project-img {
+    height: 400px;
+  }
+
+  .project-card-p-styles {
+    font-size: 15px;
+  }
+}
+
+/* Large Monitors */
+@media only screen and (min-width: 1920px) and (max-width: 10000px) {
+  .project-container {
+    width: 20%;
+  }
+
+  .project-img {
+    height: 500px;
+  }
+
+  .project-card-p-styles {
+    font-size: 15px;
+  }
+}

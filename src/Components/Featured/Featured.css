@@ -73,11 +73,15 @@
   font-size: 12px;
 }
 
+.featured-btn:hover {
+  background-color: black;
+  color: white;
+}
+
 .prj-img {
-  height: 200px;
+  height: 242px;
   width: 100%;
-  background-size: 312px;
-  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -87,5 +91,42 @@
 
   .featured-animation {
     animation: fadeInLeft 2s ease forwards;
+  }
+}
+
+/* Tablet */
+@media only screen and (min-width: 600px) and (max-width: 1000px) {
+  .featured-container {
+    width: 50%;
+  }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1000px) and (max-width: 1920px) {
+  .featured-container {
+    width: 40%;
+  }
+
+  .prj-img {
+    height: 400px;
+  }
+
+  .featured-p-styles {
+    font-size: 15px;
+  }
+}
+
+/* Large Monitors */
+@media only screen and (min-width: 1920px) and (max-width: 10000px) {
+  .featured-container {
+    width: 20%;
+  }
+
+  .prj-img {
+    height: 500px;
+  }
+
+  .featured-p-styles {
+    font-size: 15px;
   }
 }

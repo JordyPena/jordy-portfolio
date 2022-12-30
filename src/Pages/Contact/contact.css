@@ -39,7 +39,8 @@
 }
 
 .contact-button:hover {
-  opacity: 0.5;
+  background-color: #7cff62e0;
+  color: white;
 }
 
 .contact-form {
@@ -59,4 +60,71 @@
 
 .github, .email, .linkedin {
   color: white;
+}
+
+.github:hover, .email:hover, .linkedin:hover {
+  color: #7cff62e0;
+}
+
+/* Tablet */
+@media only screen and (min-width: 600px) and (max-width: 1000px) {
+  .bottom-item {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact-form {
+    width: 50%;
+  }
+
+  .top-item, .contact-icons {
+    width: 50%;
+  }
+
+  .contact-column {
+    align-items: center;
+  }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1000px) and (max-width: 1920px) {
+  .bottom-item {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact-form {
+    width: 50%;
+  }
+
+  .top-item, .contact-icons {
+    width: 50%;
+  }
+
+  .contact-column {
+    align-items: center;
+  }
+}
+
+/* Large Monitors */
+@media only screen and (min-width: 1920px) and (max-width: 10000px) {
+  .bottom-item {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact-form {
+    width: 30%;
+  }
+
+  .top-item, .contact-icons {
+    width: 30%;
+  }
+
+  .contact-column {
+    align-items: center;
+  }
 }
