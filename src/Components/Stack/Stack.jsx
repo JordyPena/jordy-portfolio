@@ -2,7 +2,7 @@ import "../Stack/Stack.css";
 import { RiReactjsLine, RiAngularjsFill } from 'react-icons/ri';
 import { DiJavascript1 } from 'react-icons/di';
 import { FaNodeJs, FaFigma, FaBootstrap } from 'react-icons/fa'
-import { SiTypescript } from 'react-icons/si';
+import { SiTypescript, SiNextdotjs } from 'react-icons/si';
 
 const Stack = () => {
 
@@ -66,6 +66,14 @@ const Stack = () => {
         </div>
         <div className='stack-txt'>
           <p className='stack-p-styles'>Typescript</p>
+        </div>
+      </div>
+      <div className='stack-content'>
+        <div className='stack-icon'>
+        <SiNextdotjs />
+        </div>
+        <div className='stack-txt'>
+          <p className='stack-p-styles'>Next</p>
         </div>
       </div>
     </div>
