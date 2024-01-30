@@ -103,7 +103,7 @@ const Home = () => {
           </p>
           <div>
             <p className='second-txt'>
-              I am a software engineer with more than 2 years of experience. Working in consulting
+              I am a software engineer with more than 3 years of experience. Working in consulting
               I specialize in talking with clients, bringing projects to life, and working in time pressured 
               settings to deploy projects on schedule.
             </p>

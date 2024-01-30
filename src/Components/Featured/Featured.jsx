@@ -1,10 +1,10 @@
 import "../Featured/Featured.css";
 import Data from "../../Data/Data";
 import { MdOutlineSubdirectoryArrowLeft } from "react-icons/md";
-import { RiReactjsLine } from "react-icons/ri";
+import { SiNextdotjs } from "react-icons/si";
 const Featured = () => {
   const goToLiveApp = () => {
-    window.open("https://tcg.vercel.app/", "_blank");
+    window.open(Data[0].url, "_blank");
   };
 
   return (
@@ -17,18 +17,16 @@ const Featured = () => {
             style={{ backgroundImage: `url(${Data[0].img})` }}
           ></span>
           <div>
-            <h3 className="featured-content-h-styles">Pokemon TCG Guru</h3>
+            <h3 className="featured-content-h-styles">{Data[0].title}</h3>
             <p className="featured-p-styles">
-              A Platform That Helps You Discover The Value Of Your Pokemon
-              Cards, And Find And Purchase New Cards With Updated Current And
-              Previous Pricing.
+              {Data[0].description}
             </p>
           </div>
           <div className="featured-btm-row">
             <div>
               <div className="featured-icon">
-                <RiReactjsLine />
-                React
+                <SiNextdotjs />
+                {Data[0].framework}
               </div>
             </div>
             <div>

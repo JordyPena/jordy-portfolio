@@ -1,6 +1,15 @@
 const Data = [
   {
     id: 1,
+    title: 'Rider Concrete',
+    description: `Focused on a company's digital presence by creating a SEO-optimized website using the Next.js framework.`,
+    framework: 'Next',
+    url: 'https://www.riderconcreteandexcavation.com/',
+    img: 'https://i.imgur.com/KQTahdv.png'
+  },
+  {
+    
+    id: 2,
     title: 'Pokemon TCG Guru',
     description: `A Platform That Helps You Discover The Value Of Your Pokemon
     Cards, And Find And Purchase New Cards With Updated Current And
@@ -10,7 +19,7 @@ const Data = [
     img: 'https://i.imgur.com/xVanUSo.jpg'
   },
   {
-    id: 2,
+    id: 3,
     title: 'Straub Construction',
     description: `Personal construction website focusing on displaying previous body of work, dynamic pricing and summaries, along with pinch and zoom blueprints.`,
     framework: 'React',
