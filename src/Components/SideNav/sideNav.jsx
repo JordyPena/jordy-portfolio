@@ -62,7 +62,7 @@ const SideNav = () => {
         </li>
         <li>
           <a
-            href="/Jordy-Pena-Engineer-resume.pdf"
+            href="/Jordy-Pena-Engineer-Resume.pdf"
             target="_blank"
             rel="noreferrer noopener"
             content-type="application/pdf"
