@@ -62,7 +62,7 @@ const SideNav = () => {
         </li>
         <li>
           <a
-            href="https://docs.google.com/document/d/e/2PACX-1vSfJIbR4g8kaari8q9Dcl7N_RnYLLNPHzM1wRwMeyxzxIiSpSMtFjD4nvthz8MO0V2nNtTYD-igf7ff/pub"
+            href="/Jordy-Pena-Engineer-resume.pdf"
             target="_blank"
             rel="noreferrer noopener"
             content-type="application/pdf"
