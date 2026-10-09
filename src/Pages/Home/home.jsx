@@ -103,9 +103,9 @@ const Home = () => {
           </p>
           <div>
             <p className='second-txt'>
-              I am a software engineer with more than 3 years of experience. Working in consulting
-              I specialize in talking with clients, bringing projects to life, and working in time pressured 
-              settings to deploy projects on schedule.
+              I'm a software engineer with 5+ years of experience turning ideas into polished,
+              reliable web apps. I enjoy owning features end to end, working closely with clients and
+              teammates, and shipping on tight timelines without cutting corners.
             </p>
           </div>
         </section>
