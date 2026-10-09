@@ -1,7 +1,7 @@
 import "../Stack/Stack.css";
 import { RiReactjsLine, RiAngularjsFill } from 'react-icons/ri';
 import { DiJavascript1 } from 'react-icons/di';
-import { FaNodeJs, FaFigma, FaBootstrap } from 'react-icons/fa'
+import { FaNodeJs, FaFigma, FaBootstrap, FaVuejs } from 'react-icons/fa'
 import { SiTypescript, SiNextdotjs } from 'react-icons/si';
 
 const Stack = () => {
@@ -20,6 +20,14 @@ const Stack = () => {
           <p className='stack-p-styles'>React</p>
         </div>
       </div>
+         <div className='stack-content'>
+        <div className='stack-icon'>
+        <SiNextdotjs />
+        </div>
+        <div className='stack-txt'>
+          <p className='stack-p-styles'>Next</p>
+        </div>
+      </div>
       <div className='stack-content'>
         <div className='stack-icon'>
           <RiAngularjsFill/>
@@ -30,13 +38,13 @@ const Stack = () => {
       </div>
       <div className='stack-content'>
         <div className='stack-icon'>
-          <FaNodeJs/>
+          <FaVuejs/>
         </div>
         <div className='stack-txt'>
-          <p className='stack-p-styles'>Node</p>
+          <p className='stack-p-styles'>Vue</p>
         </div>
       </div>
-      <div className='stack-content'>
+        <div className='stack-content'>
         <div className='stack-icon'>
           <DiJavascript1/>
         </div>
@@ -44,6 +52,23 @@ const Stack = () => {
           <p className='stack-p-styles'>Javascript</p>
         </div>
       </div>
+      <div className='stack-content'>
+        <div className='stack-icon'>
+          <SiTypescript/>
+        </div>
+        <div className='stack-txt'>
+          <p className='stack-p-styles'>Typescript</p>
+        </div>
+      </div>
+      <div className='stack-content'>
+        <div className='stack-icon'>
+          <FaNodeJs/>
+        </div>
+        <div className='stack-txt'>
+          <p className='stack-p-styles'>Node</p>
+        </div>
+      </div>
+    
       <div className='stack-content'>
         <div className='stack-icon'>
           <FaFigma/>
@@ -60,22 +85,8 @@ const Stack = () => {
           <p className='stack-p-styles'>Bootstrap</p>
         </div>
       </div>
-      <div className='stack-content'>
-        <div className='stack-icon'>
-          <SiTypescript/>
-        </div>
-        <div className='stack-txt'>
-          <p className='stack-p-styles'>Typescript</p>
-        </div>
-      </div>
-      <div className='stack-content'>
-        <div className='stack-icon'>
-        <SiNextdotjs />
-        </div>
-        <div className='stack-txt'>
-          <p className='stack-p-styles'>Next</p>
-        </div>
-      </div>
+      
+   
     </div>
   </section>
   )
