@@ -1,20 +1,26 @@
-import './home.css';
-import Caddie from '../../Components/Caddie/Caddie';
-import PuttingGreen from '../../Components/PuttingGreen/PuttingGreen';
+import "./home.css";
+import CaddieChat from "../../Components/CaddieChat/CaddieChat";
+import PuttingGreen from "../../Components/PuttingGreen/PuttingGreen";
 
 const Home = () => (
-  <main className='home'>
-    <div className='home-scene'>
-      <PuttingGreen className='home-green' />
-      <header className='home-intro'>
-        <h1 className='home-name'>Jordy Peña</h1>
-        <p className='home-role'>
-          React Developer
-          <span className='home-role-divider' aria-hidden='true'>•</span>
+  <main className="home">
+    <div className="home-scene">
+      <PuttingGreen className="home-green" />
+      <header className="home-intro">
+        <h1 className="home-name">Jordy Peña</h1>
+        <p className="home-role">
+          Front end-Developer
+          <span className="home-role-divider" aria-hidden="true">
+            •
+          </span>
           AI Engineer
+          <span className="home-role-divider" aria-hidden="true">
+            •
+          </span>
+          Golfer
         </p>
       </header>
-      <Caddie className='home-caddie' />
+      <CaddieChat className="home-caddie-chat" />
     </div>
   </main>
 );

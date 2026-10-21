@@ -59,10 +59,14 @@
   font-size: 18px;
 }
 
-.home-caddie {
+.home-caddie-chat {
   position: absolute;
   left: 260px;
   bottom: 40px;
+}
+
+.home-caddie {
+  display: block;
   width: 280px;
   height: auto;
 }

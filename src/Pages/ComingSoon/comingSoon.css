@@ -1,0 +1,47 @@
+.coming-soon {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  text-align: center;
+}
+
+.coming-soon-kicker {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #f4d23c;
+}
+
+.coming-soon-title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 1;
+  color: var(--ball);
+}
+
+.coming-soon-text {
+  margin: 0;
+  font-size: 17px;
+  color: var(--sand);
+}
+
+.coming-soon-link {
+  margin-top: 12px;
+  padding: 10px 20px;
+  border-radius: 999px;
+  background: var(--ball);
+  color: var(--fairway);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.coming-soon-link:hover {
+  background: #fff;
+}
