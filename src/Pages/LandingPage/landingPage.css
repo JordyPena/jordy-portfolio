@@ -13,13 +13,6 @@
   place-items: center;
   overflow: hidden;
   cursor: pointer;
-  background:
-    radial-gradient(ellipse at center, transparent 30%, rgba(0, 0, 0, 0.55) 100%),
-    repeating-linear-gradient(
-      90deg,
-      var(--fairway) 0 90px,
-      var(--fairway-light) 90px 180px
-    );
   animation: landing-exit 0.5s ease-in 3.3s forwards;
 }
 

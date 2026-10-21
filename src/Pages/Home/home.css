@@ -1,109 +1,26 @@
-.home-container {
-  background-image:  linear-gradient(to right bottom,rgba(5,8,16,.6),rgba(5,8,16,.6)),url('../../../public/images/space.jpg');
-  background-repeat: no-repeat;
-  background-size: 100%;
-  width: 100%;
+.home {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  animation: home-enter 0.5s ease-out;
 }
 
-.home-header-styles {
-  font-size: 20px;
-  color: #7bff62;
-  margin: 0;
-  text-align: center;
-  padding-top: 50px;
-}
-
-.home-content-container {
-  display: flex;
-  flex-direction: column;
-  color: white;
-  font-size: 30px;
-  text-align: center;
-  margin: 0 30px;
-  letter-spacing: 0.1rem;
-}
-
-.txt-container {
-  max-width: 100%;
-  word-wrap: break-word;
-}
-
-.standout-txt {
-  color: #7bff62;
-}
-
-.second-txt {
-  color: white;
-  font-size: 15px;
-  margin: 0;
-}
-
-.alien-img-container {
-  display: flex;
-  justify-content: center;
+.home-caddie {
+  width: 280px;
   height: auto;
-  object-fit: scale-down;
-  width: 100%;
-  height: 100%;
-  padding: 30px 0;
 }
 
-.alien-img {
-  background-image: url(../../../public/images/alien.png);
-  height: 200px;
-  width: 100%;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+@keyframes home-enter {
+  from { opacity: 0; }
 }
 
-.home-h-styles {
-  font-size: 30px;
-  color: #7bff62;
-  margin: 0;
-  text-align: center;
-  padding: 50px 0 10px 0;
-}
-
-.home-h-styles {
-  animation: flipInY 2s ease forwards;
-}
-
-@keyframes floating {
-  0% { transform: translate(0,  0px); }
-  50%  { transform: translate(0, 15px); }
-  100%   { transform: translate(0, -0px); }   
+@keyframes caddie-bob {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-8px); }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .header-animation {
-    animation: fadeInLeft 2s ease forwards;
-  }
-
-  .alien-animation {
-    animation-name: floating;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    margin-top: 5px;
-  }
-}
-
-/* Large Monitors */
-@media only screen and (min-width: 1920px) and (max-width: 10000px) {
-  .home-header-styles {
-    font-size: 25px;
-  }
-
-  .home-content-container {
-    font-size: 35px;
-  }
-
-  .second-txt {
-    font-size: 20px;
-  }
-
-  .home-h-styles {
-    font-size: 35px;
+  .home-caddie {
+    animation: caddie-bob 3s ease-in-out infinite;
   }
 }

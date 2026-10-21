@@ -18,3 +18,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: black;
 }
+
+/* Mowed-fairway stripes with a vignette that pulls focus to the center */
+.fairway-bg {
+  background:
+    radial-gradient(ellipse at center, transparent 30%, rgba(0, 0, 0, 0.55) 100%),
+    repeating-linear-gradient(
+      90deg,
+      var(--fairway) 0 90px,
+      var(--fairway-light) 90px 180px
+    );
+}

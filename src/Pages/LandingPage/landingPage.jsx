@@ -52,7 +52,7 @@ const LandingPage = () => {
   const mid = (NAME.length - 1) / 2;
 
   return (
-    <main className="landing" onClick={goHome}>
+    <main className="landing fairway-bg" onClick={goHome}>
       <div className="landing-stage">
         <div className="ball-shadow" />
         <div className="ball-drop">
