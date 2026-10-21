@@ -1,109 +1,102 @@
-.home-container {
-  background-image:  linear-gradient(to right bottom,rgba(5,8,16,.6),rgba(5,8,16,.6)),url('../../../public/images/space.jpg');
-  background-repeat: no-repeat;
-  background-size: 100%;
-  width: 100%;
+.home {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background:
+    radial-gradient(ellipse at center, transparent 35%, rgba(0, 0, 0, 0.5) 100%),
+    var(--fairway);
+  animation: home-enter 0.5s ease-out;
 }
 
-.home-header-styles {
-  font-size: 20px;
-  color: #7bff62;
-  margin: 0;
-  text-align: center;
-  padding-top: 50px;
+/* Fixed-size scene so the layout is identical on every desktop screen */
+.home-scene {
+  position: relative;
+  width: 960px;
+  height: 640px;
 }
 
-.home-content-container {
-  display: flex;
-  flex-direction: column;
-  color: white;
-  font-size: 30px;
-  text-align: center;
-  margin: 0 30px;
-  letter-spacing: 0.1rem;
-}
-
-.txt-container {
-  max-width: 100%;
-  word-wrap: break-word;
-}
-
-.standout-txt {
-  color: #7bff62;
-}
-
-.second-txt {
-  color: white;
-  font-size: 15px;
-  margin: 0;
-}
-
-.alien-img-container {
-  display: flex;
-  justify-content: center;
-  height: auto;
-  object-fit: scale-down;
+.home-green {
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
-  padding: 30px 0;
+  overflow: visible; /* side bushes spill slightly past the scene edge */
 }
 
-.alien-img {
-  background-image: url(../../../public/images/alien.png);
-  height: 200px;
-  width: 100%;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+/* Sits in the open space above the green, left of the flag */
+.home-intro {
+  position: absolute;
+  top: 36px;
+  left: 64px;
+  z-index: 1;
 }
 
-.home-h-styles {
-  font-size: 30px;
-  color: #7bff62;
+.home-name {
   margin: 0;
-  text-align: center;
-  padding: 50px 0 10px 0;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 68px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: var(--ball);
+  text-shadow: 0 4px 24px rgba(0, 0, 0, 0.35);
 }
 
-.home-h-styles {
-  animation: flipInY 2s ease forwards;
+.home-role {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 14px 0 0 4px;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--sand);
 }
 
-@keyframes floating {
-  0% { transform: translate(0,  0px); }
-  50%  { transform: translate(0, 15px); }
-  100%   { transform: translate(0, -0px); }   
+.home-role-divider {
+  color: #f4d23c;
+  font-size: 18px;
+}
+
+.home-caddie-chat {
+  position: absolute;
+  left: 260px;
+  bottom: 40px;
+}
+
+.home-caddie {
+  display: block;
+  width: 280px;
+  height: auto;
+}
+
+@keyframes home-enter {
+  from { opacity: 0; }
+}
+
+@keyframes caddie-bob {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-8px); }
+}
+
+@keyframes intro-rise {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .header-animation {
-    animation: fadeInLeft 2s ease forwards;
+  .home-caddie {
+    animation: caddie-bob 3s ease-in-out infinite;
   }
 
-  .alien-animation {
-    animation-name: floating;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    margin-top: 5px;
-  }
-}
-
-/* Large Monitors */
-@media only screen and (min-width: 1920px) and (max-width: 10000px) {
-  .home-header-styles {
-    font-size: 25px;
+  .home-name {
+    animation: intro-rise 0.6s ease-out 0.15s backwards;
   }
 
-  .home-content-container {
-    font-size: 35px;
-  }
-
-  .second-txt {
-    font-size: 20px;
-  }
-
-  .home-h-styles {
-    font-size: 35px;
+  .home-role {
+    animation: intro-rise 0.6s ease-out 0.35s backwards;
   }
 }

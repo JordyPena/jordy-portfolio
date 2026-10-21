@@ -1,0 +1,100 @@
+/* Player (bio) tab: main column with info cards on the side */
+
+.player-body {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 40px;
+  padding-top: 40px;
+  padding-bottom: 64px;
+}
+
+.player-section + .player-section {
+  margin-top: 40px;
+}
+
+.player-bio {
+  margin: 0 0 16px;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+/* ---------- Sidebar cards ---------- */
+
+.player-sidebar {
+  position: sticky;
+  top: 24px;
+  align-self: start;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.player-card {
+  padding: 20px 22px;
+  border: 1px solid #e4dfd2;
+  border-radius: 14px;
+  background: #fff;
+}
+
+.player-fields {
+  margin: 0;
+}
+
+.player-field + .player-field {
+  margin-top: 14px;
+}
+
+.player-field dt {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #6b7a70;
+}
+
+.player-field dd {
+  margin: 3px 0 0;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+/* list values (e.g. hobbies) show as tags */
+.player-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 6px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.player-tags li {
+  padding: 4px 12px;
+  border-radius: 999px;
+  background: #e8f1ec;
+  color: #0b6b45;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.player-card-links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.player-card-links a {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 14px;
+  border-radius: 10px;
+  background: #f4f1e8;
+  color: #0b6b45;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.player-card-links a:hover {
+  background: #0b6b45;
+  color: #fff;
+}
