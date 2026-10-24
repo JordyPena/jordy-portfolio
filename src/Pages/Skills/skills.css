@@ -185,3 +185,110 @@
   color: #6b7a70;
   font-size: 14px;
 }
+
+/* ---------- Tablet ---------- */
+
+@media (max-width: 960px) {
+  .skills-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ---------- Mobile ---------- */
+
+@media (max-width: 760px) {
+  .skills-body {
+    padding-top: 24px;
+  }
+
+  .skills-filters {
+    gap: 6px;
+    margin-bottom: 28px;
+  }
+
+  .skills-filter {
+    padding: 7px 14px;
+    white-space: nowrap;
+  }
+
+  .skills-cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-bottom: 36px;
+  }
+
+  .skills-card {
+    padding: 14px 16px;
+  }
+
+  .skills-card-value {
+    font-size: 32px;
+  }
+}
+
+/* each table row becomes a stacked card: rank | name + years, then bar, then where */
+@media (max-width: 640px) {
+  .skills-table thead {
+    display: none;
+  }
+
+  .skills-table,
+  .skills-table tbody {
+    display: block;
+  }
+
+  .skills-table tr {
+    display: grid;
+    grid-template-columns: 24px 1fr auto;
+    grid-template-areas:
+      'rank name years'
+      '.    bar  bar'
+      '.    where where';
+    gap: 6px 10px;
+    padding: 14px 16px;
+    border-top: 1px solid #ece7da;
+  }
+
+  .skills-table tbody tr:first-child {
+    border-top: 0;
+  }
+
+  .skills-table td,
+  .skills-table tbody th,
+  .skills-table .skills-rank,
+  .skills-table .skills-years {
+    width: auto;
+    padding: 0;
+    border: 0;
+    text-align: left;
+  }
+
+  .skills-table tbody th {
+    grid-area: name;
+  }
+
+  .skills-table .skills-rank {
+    grid-area: rank;
+  }
+
+  .skills-table td:nth-child(3) {
+    grid-area: bar;
+    align-self: center;
+  }
+
+  .skills-table .skills-years {
+    grid-area: years;
+  }
+
+  .skills-years::after {
+    content: ' yrs';
+    color: #6b7a70;
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+  .skills-table .skills-where {
+    grid-area: where;
+    font-size: 13px;
+  }
+}

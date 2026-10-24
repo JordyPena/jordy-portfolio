@@ -98,3 +98,26 @@
   background: #0b6b45;
   color: #fff;
 }
+
+/* ---------- Tablet and mobile: sidebar cards move below the bio ---------- */
+
+@media (max-width: 900px) {
+  .player-body {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding-top: 32px;
+  }
+
+  .player-sidebar {
+    position: static;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    align-items: start;
+  }
+}
+
+@media (max-width: 760px) {
+  .player-bio {
+    font-size: 16px;
+  }
+}

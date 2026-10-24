@@ -5,7 +5,8 @@
   padding: 20px;
 }
 
-nav {
+/* scoped to this component so it doesn't color other <nav>s (e.g. the player tabs) */
+.site-nav {
   background-color: #7cff62e0;
 }
 

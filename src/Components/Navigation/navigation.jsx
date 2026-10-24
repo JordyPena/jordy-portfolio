@@ -51,7 +51,7 @@ const Navigation = () => {
   return (
     <>
       {isMobile ? (
-        <nav>
+        <nav className="site-nav">
           <div className="icon-container">
             <RiAliensFill color="black" size="4rem" />
             <Egg width="4rem" height="4rem" />
@@ -68,7 +68,7 @@ const Navigation = () => {
           {openMenu && <SideNav />}
         </nav>
       ) : (
-        <nav>
+        <nav className="site-nav">
           <div className="icon-container">
             <RiAliensFill color="black" size="4rem" />
             <div className="easter-egg-container">
