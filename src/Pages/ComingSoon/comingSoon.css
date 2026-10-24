@@ -45,3 +45,13 @@
 .coming-soon-link:hover {
   background: #fff;
 }
+
+@media (max-width: 760px) {
+  .coming-soon {
+    padding: 0 16px;
+  }
+
+  .coming-soon-title {
+    font-size: clamp(40px, 12vw, 56px);
+  }
+}

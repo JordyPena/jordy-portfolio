@@ -1,7 +1,4 @@
-.caddie-chat {
-  width: 280px;
-}
-
+/* the caddie's size comes from the page (see .home-caddie) */
 .caddie-button {
   display: block;
   padding: 0;
@@ -57,8 +54,9 @@
 .chat-panel {
   --chat-bg: #f7f7f4;
   position: absolute;
-  left: 290px;
-  bottom: 110px;
+  /* just right of the caddie, around head height */
+  left: calc(100% + 10px);
+  bottom: 31%;
   z-index: 3;
   width: 330px;
   display: flex;
@@ -297,6 +295,36 @@
 .chat-input svg {
   width: 16px;
   height: 16px;
+}
+
+/* ---------- Mobile: chat becomes a bottom sheet ----------
+   800px rather than the page's 760px: just above 760 the side panel would run
+   past the right edge of the screen */
+
+@media (max-width: 800px) {
+  .chat-panel {
+    position: fixed;
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+    z-index: 50;
+    width: auto;
+    max-height: calc(100vh - 24px);
+    transform-origin: bottom center;
+  }
+
+  .chat-messages {
+    max-height: 40vh;
+  }
+
+  /* 16px stops iOS Safari from zooming in when the input is focused */
+  .chat-input input {
+    font-size: 16px;
+  }
+
+  .chat-hint {
+    font-size: 11px;
+  }
 }
 
 /* ---------- Motion ---------- */
